@@ -45,13 +45,13 @@ async def on_message(message):
                 bands.append(line.strip())
 
         if any(word in message.content.lower() for word in bands):
-            await message.channel.send("Jm3 krak baraka man takhssar lhadra !")
+            await message.channel.send("Jm3 rassek baraka man takhssar lhadra !")
 
     await client.process_commands(message)
 
 @client.command()
 async def ping(ctx):
-    await ctx.send('Pingi mok a zamel !')
+    await ctx.send('Ping your #@* :D')
 
 @client.command(aliases=['8ball'])
 async def _8ball(ctx, *, question):
